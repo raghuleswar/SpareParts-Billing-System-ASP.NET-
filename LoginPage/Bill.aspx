@@ -43,6 +43,14 @@
                     color: black;
                     font-size: 21px
         }
+        .txt{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            font-size:200%;
+            font-weight:bold;
+            text-align:center;
+        }
         
     </style>
    
@@ -51,7 +59,7 @@
     <form id="form1" runat="server">
         <div>
            <center><asp:Label ID="Label1" CssClass="labeltext" runat="server" Text="Automobiles Spare Parts"></asp:Label></center>
-            <center><h2>Consolidated Bill</h2></center><br />
+            <br />
            <p class="cs">
                <br />
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -59,11 +67,13 @@
             <asp:Label ID="Label2" runat="server" Font-Bold="True" ForeColor="Red"></asp:Label>
 &nbsp; in Order bill&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:HyperLink ID="HyperLink1" runat="server" CssClass="d1" NavigateUrl="~/Dashboard.aspx">Continue Shopping</asp:HyperLink>
-            <br />
+            &nbsp;<asp:Label ID="Label3" CssClass="txt" runat="server" Text="Order Placed Successfully"></asp:Label>
+          
                <br />
                </p>
-            <br />
-            <br />
+           
+          
+             <center><h2>Consolidated Bill</h2></center><br />
             <center>
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Height="401px"  ShowFooter="True" Width="970px">
                 <AlternatingRowStyle BackColor="White" />

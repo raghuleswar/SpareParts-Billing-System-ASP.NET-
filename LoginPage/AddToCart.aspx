@@ -86,7 +86,7 @@
                     <ItemStyle HorizontalAlign="Center" />
                     </asp:BoundField>
                     <asp:ImageField DataImageUrlField="ProductImage" HeaderText="Product Image">
-                        <ItemStyle HorizontalAlign="Center" />
+                        <ItemStyle HorizontalAlign="Center" Height="30px" Width="30px" />
                     </asp:ImageField>
                     <asp:CommandField DeleteText="Remove" ShowDeleteButton="True" />
                 </Columns>

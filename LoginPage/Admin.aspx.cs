@@ -61,7 +61,7 @@ namespace LoginPage
                         sqlCon.Open();
                         int x = 9;
                         x++;
-                        string query = "INSERT INTO ProductDetails (ProductName, Price,ProductImage) VALUES (@ProductName,@Price,'/Images/common.jpg')";
+                        string query = "INSERT INTO ProductDetails (ProductName, Price,ProductImage) VALUES (@ProductName,@Price,'/Images/Engine.jpg')";
                         SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                         sqlCmd.Parameters.AddWithValue("@ProductName", (gvPhoneBook.FooterRow.FindControl("txtFirstNameFooter") as TextBox).Text.Trim());
                         sqlCmd.Parameters.AddWithValue("@Price", (gvPhoneBook.FooterRow.FindControl("txtLastNameFooter") as TextBox).Text.Trim());
