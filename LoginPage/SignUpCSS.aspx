@@ -6,6 +6,17 @@
 <head runat="server">
     <title>Spare Management System</title>
     <link rel="stylesheet" href="Css/Trans.css" />
+    <style type="text/css">
+        .auto-style1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 15px;
+            font-size: 100%;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     
@@ -13,7 +24,7 @@
             <img src="engine.jpg" />
             <h2>Sign Up for our spare management system</h2>
             <form id="form1" runat="server">
-                <div class="form-content">
+                <div>
                     <label>Username:<br />
                                     <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox1" ErrorMessage="UserName must only contain numeric and alphabet values. No special character allowed" ForeColor="#FF3300" ValidationExpression="[a-zA-Z0-9]*$"></asp:RegularExpressionValidator>
                                     </label>
@@ -58,7 +69,10 @@
 
                     <asp:Button ID="Button1" runat="server" Text="Sign Up" OnClick="Button1_Click" />
 
-                    <asp:Label ID="Label1" runat="server" Text="" CssClass="labeltext"></asp:Label>
+                <center><asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style1"  NavigateUrl="~/LoginCss.aspx" Height="16px" Width="226px">Back to Login</asp:HyperLink></center>
+           
+
+                    <asp:Label ID="Label1" runat="server" CssClass="auto-style1" Width="558px"></asp:Label>
 
                                     <asp:Label ID="Label2" runat="server"></asp:Label>
 

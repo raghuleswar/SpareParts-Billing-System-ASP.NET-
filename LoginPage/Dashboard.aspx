@@ -22,24 +22,35 @@
         .auto-style5 {
             width: 222px;
         }
+        .username{
+            text-transform: uppercase;
+        }
+        .ab{
+            background-color:#00ffff;
+            border:1px solid #0094ff;
+            margin:auto;
+            height:auto;
+            border-radius:20px;
+            width:auto;
+        }
         </style>
     <link href="Css/menu.css" rel="stylesheet" />
 </head>
 <body>
     
-   <h1> <asp:Label ID="Label8" runat="server" Font-Bold="True" Text="Automobile Spare Parts"></asp:Label></h1>
+  <center> <h1> <asp:Label ID="Label8" runat="server" Font-Bold="True" Text="Automobile Spare Parts" ></asp:Label></h1></center>
             <br />
     <form id="form1" runat="server">
     <div class="d1">
             <div class="samp">
-                <ul>
+                <ul class="ab">
                     <li><asp:HyperLink ID="link" runat="server" NavigateUrl="~/Dashboard.aspx">Home</asp:HyperLink></li>
                     <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/History.aspx">History</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp; </li>
                     <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AddToCart.aspx">Show Cart</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp; </li>
                     
                     
                     <li class="username">
-                        <asp:Label ID="Label9" runat="server"></asp:Label>
+                        <asp:Label ID="Label9" runat="server" ></asp:Label>
                     </li>
                     
                     

@@ -68,21 +68,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddToCart.aspx" />
+    <Content Include="Admin.aspx" />
     <Content Include="autoparts.jpg" />
+    <Content Include="Bill.aspx" />
     <Content Include="Css\menu.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="engine.jpg" />
     <Content Include="History.aspx" />
+    <Content Include="Images\addnew.png" />
     <Content Include="Images\Alternator.jpg" />
     <Content Include="Images\back.jpg" />
     <Content Include="Images\Battery.jpg" />
+    <Content Include="Images\cancel.png" />
     <Content Include="Images\Catalytic Converter.jpg" />
+    <Content Include="Images\common.jpg" />
+    <Content Include="Images\delete.png" />
     <Content Include="Images\download.png" />
+    <Content Include="Images\edit.png" />
     <Content Include="Images\Engine.jpg" />
     <Content Include="Images\Front Axle.jpg" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\Muffler.jpg" />
     <Content Include="Images\Radiator.jpg" />
+    <Content Include="Images\save.png" />
     <Content Include="Images\Transmission.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="LoginCss.aspx" />
@@ -100,6 +108,20 @@
     </Compile>
     <Compile Include="AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.aspx.cs">
+      <DependentUpon>Bill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bill.aspx.designer.cs">
+      <DependentUpon>Bill.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
